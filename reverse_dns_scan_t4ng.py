@@ -45,7 +45,7 @@ if __name__ == "__main__":
     print_banner()
     print("Script made by T4NG")
     print("Reverse DNS Starting...")
-    print("It is working, don`t quit! The process sometimes take 10-15 minute per ip/24 scope if ips are valid. Don`t look at 0% :)")
+    print("It is working, don`t quit! The process can take 2-5 minute in ip/24 scope, 10-15 minute in ip/19. Don`t look at 0% :)")
     reverse_dns_scan(ip_list_file, output_filename)
     print("Scan done. Results in 'hostnames.txt' file")
     print("\nHave a nice day ;)")
