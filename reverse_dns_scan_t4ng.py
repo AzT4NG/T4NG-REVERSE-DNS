@@ -37,7 +37,7 @@ def reverse_dns_scan(ip_list_file, output_filename):
                 pbar.update(1)
                 pbar.set_postfix_str(f"Scanned: {count}/{len(ip_list)}")
 
-    return count  # Eklendiği host sayısını döndür
+    return count 
 
 if __name__ == "__main__":
     ip_list_file = "ip_list.txt" 
