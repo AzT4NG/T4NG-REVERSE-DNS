@@ -60,9 +60,9 @@ Command:
 <br>
 
 The result may take a while.
-Scan results will be written to "hostname" file.
+Scan results will be written to "hostnames.txt" file.
 
-Make sure you delete <i>"hostname"</i> file before running a new scan.
+Make sure you delete or change the name of <i>"hostname.txt"</i> file before running a new scan.
 
 <hr>
 
