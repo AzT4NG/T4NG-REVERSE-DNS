@@ -13,8 +13,6 @@ def print_banner():
 ░░░██║░░░╚════██║██║░╚███║╚██████╔╝
 ░░░╚═╝░░░░░░░░╚═╝╚═╝░░╚══╝░╚═════╝░
                         """)
-#Use this code only if you have the necessary permission for pentests!
-#made by T4NG
 
 def reverse_dns_scan(ip_list_file, output_filename):
     with open(ip_list_file, 'r') as ip_file:
@@ -39,14 +37,16 @@ def reverse_dns_scan(ip_list_file, output_filename):
                 pbar.update(1)
                 pbar.set_postfix_str(f"Scanned: {count}/{len(ip_list)}")
 
+    return count  # Eklendiği host sayısını döndür
+
 if __name__ == "__main__":
     ip_list_file = "ip_list.txt" 
     output_filename = "hostnames.txt"
     print_banner()
     print("Script made by T4NG")
     print("Reverse DNS Starting...")
-    print("It is working, don`t quit! The process can take 2-5 minute in ip/24 scope, 10-15 minute in ip/19. Don`t look at 0% :)")
-    reverse_dns_scan(ip_list_file, output_filename)
-    print("Scan done. Results in 'hostnames.txt' file")
+    print("It is working, don`t quit! The process can take 2-5 minute in ip/24 scope, other scopes takes more 10m+. Don`t care about 0% :)")
+    num_hosts = reverse_dns_scan(ip_list_file, output_filename)
+    print(f"Scan done. {num_hosts} hosts added to 'hostnames.txt' file")
     print("\nHave a nice day ;)")
 
