@@ -15,6 +15,7 @@ def print_banner():
                         """)
 #Use this code only if you have the necessary permission for pentests!
 #made by T4NG
+
 def reverse_dns_scan(ip_list_file, output_filename):
     with open(ip_list_file, 'r') as ip_file:
         ip_list = ip_file.read().splitlines()
@@ -36,7 +37,7 @@ def reverse_dns_scan(ip_list_file, output_filename):
                         output_file.write(f"{count + 1}. {hostname} - {ip}\n")
                         count += 1
                 pbar.update(1)
-                pbar.set_postfix_str(f"Skan edilib: {count}/{len(ip_list)}")
+                pbar.set_postfix_str(f"Scanned: {count}/{len(ip_list)}")
 
 if __name__ == "__main__":
     ip_list_file = "ip_list.txt" 
