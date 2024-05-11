@@ -1,5 +1,5 @@
 # T4NG-REVERSE-DNS
-This python code using to find domains in given mass ip ranges via nmap. You can use it without any difficulty.
+This python code using to find domains in given mass ip ranges via nmap on Linux systems. You can use it without any difficulty.
 
 <h5>Made by T4NG! v1-2024/5 xploit</h5>
 <hr>
@@ -15,13 +15,11 @@ First of all download Python:
 
 </br>
 
-Make sure your kali is up to date and has NMAP tool:
+Make sure your system is up to date and has NMAP tool:
 
 
-- sudo apt update
-- sudo apt upgrade -y
-
-- sudo apt install nmap
+- sudo apt update & upgrade -y
+- sudo apt install nmap -y
 
 
 <hr>
@@ -39,9 +37,9 @@ Example:
 
 10.10.10.0/24
 
-10.11.11.0/24
+10.11.11.0/23
 
-10.12.12.0/24
+10.12.12.0/22
 
 ...
 
@@ -61,8 +59,6 @@ Command:
 
 The result may take a while.
 Scan results will be written to "hostnames.txt" file.
-
-Make sure you delete or change the name of <i>"hostname.txt"</i> file before running a new scan.
 
 <hr>
 
