@@ -4,22 +4,24 @@ This python code using to find domains in given mass ip ranges via nmap on Linux
 <h5>Made by T4NG! v1-2024/5 xploit</h5>
 <hr>
 
-First of all download Python:
+Make sure your system is up to date and has NMAP tool:
 
 
-- sudo apt update
+- sudo apt update & upgrade -y
+
+- sudo apt install nmap -y
+
+
+Download Python:
+
 
 - sudo apt install python3
 
 - sudo pip3 install -r requirements.txt
 
+
 </br>
 
-Make sure your system is up to date and has NMAP tool:
-
-
-- sudo apt update & upgrade -y
-- sudo apt install nmap -y
 
 
 <hr>
